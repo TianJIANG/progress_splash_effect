@@ -23,6 +23,9 @@
 		94407D4416B048BA008ECCE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94407D1F16B048B9008ECCE2 /* Foundation.framework */; };
 		94407D4C16B048BA008ECCE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94407D4A16B048BA008ECCE2 /* InfoPlist.strings */; };
 		94407D4F16B048BA008ECCE2 /* splash_animationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94407D4E16B048BA008ECCE2 /* splash_animationTests.m */; };
+		949D130D16B52C320053E710 /* essai.png in Resources */ = {isa = PBXBuildFile; fileRef = 949D130C16B52C320053E710 /* essai.png */; };
+		94E99ADF16B08D190001BB39 /* ProgressImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E99ADE16B08D190001BB39 /* ProgressImageView.m */; };
+		94E99AE116B0A5320001BB39 /* splashscreens.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E99AE016B0A5320001BB39 /* splashscreens.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		94407D4B16B048BA008ECCE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94407D4D16B048BA008ECCE2 /* splash_animationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = splash_animationTests.h; sourceTree = "<group>"; };
 		94407D4E16B048BA008ECCE2 /* splash_animationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = splash_animationTests.m; sourceTree = "<group>"; };
+		949D130C16B52C320053E710 /* essai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = essai.png; sourceTree = "<group>"; };
+		94E99ADD16B08C060001BB39 /* ProgressImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressImageView.h; sourceTree = "<group>"; };
+		94E99ADE16B08D190001BB39 /* ProgressImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressImageView.m; sourceTree = "<group>"; };
+		94E99AE016B0A5320001BB39 /* splashscreens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreens.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +130,8 @@
 				94407D3816B048B9008ECCE2 /* ViewController.h */,
 				94407D3916B048B9008ECCE2 /* ViewController.m */,
 				94407D2416B048B9008ECCE2 /* Supporting Files */,
+				94E99ADD16B08C060001BB39 /* ProgressImageView.h */,
+				94E99ADE16B08D190001BB39 /* ProgressImageView.m */,
 			);
 			path = splash_animation;
 			sourceTree = "<group>";
@@ -130,6 +139,8 @@
 		94407D2416B048B9008ECCE2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				94E99AE016B0A5320001BB39 /* splashscreens.png */,
+				949D130C16B52C320053E710 /* essai.png */,
 				94407D2516B048B9008ECCE2 /* splash_animation-Info.plist */,
 				94407D2616B048B9008ECCE2 /* InfoPlist.strings */,
 				94407D2916B048B9008ECCE2 /* main.m */,
@@ -236,6 +247,8 @@
 				94407D3216B048B9008ECCE2 /* Default@2x.png in Resources */,
 				94407D3416B048B9008ECCE2 /* Default-568h@2x.png in Resources */,
 				94407D3716B048B9008ECCE2 /* MainStoryboard.storyboard in Resources */,
+				94E99AE116B0A5320001BB39 /* splashscreens.png in Resources */,
+				949D130D16B52C320053E710 /* essai.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +286,7 @@
 				94407D2A16B048B9008ECCE2 /* main.m in Sources */,
 				94407D2E16B048B9008ECCE2 /* AppDelegate.m in Sources */,
 				94407D3A16B048B9008ECCE2 /* ViewController.m in Sources */,
+				94E99ADF16B08D190001BB39 /* ProgressImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +461,7 @@
 				94407D5416B048BA008ECCE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94407D5516B048BA008ECCE2 /* Build configuration list for PBXNativeTarget "splash_animationTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +470,7 @@
 				94407D5716B048BA008ECCE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

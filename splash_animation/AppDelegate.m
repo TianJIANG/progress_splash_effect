@@ -10,9 +10,24 @@
 
 @implementation AppDelegate
 
+@synthesize progressImageView = _progressImageView;
+@synthesize progress = _progress;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    _progress = 1.0f;
+    _progressImageView = (ProgressImageView*)[self.window.rootViewController.view.subviews objectAtIndex:1];
+    
+    NSDate *d = [NSDate date];
+    NSTimer *t = [[NSTimer alloc] initWithFireDate: d
+                                          interval: 0.1f
+                                            target: self
+                                          selector:@selector(updateProgress:)
+                                          userInfo:nil repeats:YES];
+    
+    NSRunLoop *runner = [NSRunLoop currentRunLoop];
+    [runner addTimer:t forMode: NSDefaultRunLoopMode];
     return YES;
 }
 							
@@ -41,6 +56,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)updateProgress:(NSTimer *)timer {
+    _progress -= 0.01f;
+    [_progressImageView setProgress:_progress];
 }
 
 @end
